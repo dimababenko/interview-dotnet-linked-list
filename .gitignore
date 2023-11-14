@@ -54,3 +54,5 @@ dkms.conf
 /CustomLinkedList/CustomLinkedList/obj
 /CustomLinkedList/CustomLinkedList/bin/Debug
 /CustomLinkedList/.vs
+/ConsoleApp1/ConsoleApp1/obj
+/ConsoleApp1/.vs/ConsoleApp1

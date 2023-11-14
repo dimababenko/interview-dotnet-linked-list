@@ -7,16 +7,25 @@ do
     string? str = Console.ReadLine();
     if (!uint.TryParse(str, out uint nodesNumber))
     {
-        Console.WriteLine("Wrond nodes number!");
+        Console.WriteLine("Wrong nodes number!");
         continue;
     }
 
-    var linkedList = new CustomLinkedList(3);
-    int midValue = 0;
+    Node? head = LinkedListFactory.GenerateLinkedList(nodesNumber);
 
-    //TODO: Write a function to find a mid element.
-    //midValue = FindMidValue(linkedList);
+    uint midValue = FindMiddleElementValue(head);
 
     Console.WriteLine($"Total nodes number: {nodesNumber}");
     Console.WriteLine($"Mid element value: {midValue}");
+    Console.WriteLine();
 } while (true);
+
+
+static uint FindMiddleElementValue(Node? head)
+{
+    uint midValue = 0;
+
+    //TODO: Add implementation here to find a value of midle element.
+
+    return midValue;
+}

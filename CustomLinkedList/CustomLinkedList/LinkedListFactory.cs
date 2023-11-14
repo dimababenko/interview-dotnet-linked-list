@@ -1,8 +1,8 @@
 ﻿namespace LogicLinkedList;
 
-public class CustomLinkedList
+public static class LinkedListFactory
 {
-    public CustomLinkedList(uint nodesNumber) 
+    public static Node? GenerateLinkedList(uint nodesNumber)
     {
         Node? head = null;
         while (nodesNumber > 0)
@@ -12,8 +12,6 @@ public class CustomLinkedList
             nodesNumber--;
         }
 
-        Root = head;
+        return head;
     }
-
-    public Node? Root { get; }
 }
